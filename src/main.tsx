@@ -11,6 +11,8 @@ import {ChainFieldBySelection} from "./components/pages/day3/dependencies/ChainF
 import {RequiredFieldBySelection} from "./components/pages/day3/dependencies/RequiredFieldBySelection";
 import {RequiredFieldByIf} from "./components/pages/day3/ifThenElse/RequiredFieldByIf";
 import {DependentSchemas} from "./components/pages/day3/dependencies/DependentSchemas";
+import {InnerDefinition} from "./components/pages/day4/InnerDefinition";
+import {ImportJsonSchema} from "./components/pages/day4/ImportJsonSchema";
 
 const router = createBrowserRouter([
   {
@@ -75,8 +77,20 @@ const router = createBrowserRouter([
             ]
           },
         ]
+      },
+      {
+        path: "day4/",
+        children: [
+          {
+            path: "inner_definition",
+            element: <InnerDefinition />
+          },
+          {
+            path: "import_json_schema",
+            element: <ImportJsonSchema />
+          }
+        ]
       }
-
     ]
   }
 ])
