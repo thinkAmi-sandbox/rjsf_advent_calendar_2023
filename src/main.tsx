@@ -13,6 +13,8 @@ import {RequiredFieldByIf} from "./components/pages/day3/ifThenElse/RequiredFiel
 import {DependentSchemas} from "./components/pages/day3/dependencies/DependentSchemas";
 import {InnerDefinition} from "./components/pages/day4/InnerDefinition";
 import {ImportJsonSchema} from "./components/pages/day4/ImportJsonSchema";
+import {SingleFileUpload} from "./components/pages/day5/SingleFileUpload";
+import {MultipleFileUpload} from "./components/pages/day5/MultipleFileUpload";
 
 const router = createBrowserRouter([
   {
@@ -88,6 +90,19 @@ const router = createBrowserRouter([
           {
             path: "import_json_schema",
             element: <ImportJsonSchema />
+          }
+        ]
+      },
+      {
+        path: "day5/",
+        children: [
+          {
+            path: "single_file_upload",
+            element: <SingleFileUpload />
+          },
+          {
+            path: "multiple_file_upload",
+            element: <MultipleFileUpload />
           }
         ]
       }
