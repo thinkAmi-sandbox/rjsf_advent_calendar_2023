@@ -15,6 +15,11 @@ import {InnerDefinition} from "./components/pages/day4/InnerDefinition";
 import {ImportJsonSchema} from "./components/pages/day4/ImportJsonSchema";
 import {SingleFileUpload} from "./components/pages/day5/SingleFileUpload";
 import {MultipleFileUpload} from "./components/pages/day5/MultipleFileUpload";
+import {UiSchemaOption} from "./components/pages/day6/UiSchemaOption";
+import {UiSchemaForString} from "./components/pages/day6/UiSchemaForString";
+import {UiSchemaForArray} from "./components/pages/day6/UiSchemaForArray";
+import {UiSchemaEmptyValue} from "./components/pages/day6/UiSchemaEmptyValue";
+import {UiSchemaForButton} from "./components/pages/day6/UiSchemaForButton";
 
 const router = createBrowserRouter([
   {
@@ -103,6 +108,31 @@ const router = createBrowserRouter([
           {
             path: "multiple_file_upload",
             element: <MultipleFileUpload />
+          }
+        ]
+      },
+      {
+        path: "day6/",
+        children: [
+          {
+            path: "ui_schema_option",
+            element: <UiSchemaOption />
+          },
+          {
+            path: "ui_schema_for_string",
+            element: <UiSchemaForString />
+          },
+          {
+            path: "ui_schema_empty_value",
+            element: <UiSchemaEmptyValue />
+          },
+          {
+            path: "ui_schema_for_array",
+            element: <UiSchemaForArray />
+          },
+          {
+            path: "ui_schema_for_button",
+            element: <UiSchemaForButton />
           }
         ]
       }
