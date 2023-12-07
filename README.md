@@ -13,3 +13,4 @@
 - [react-jsonschema-formにて、JSON Schemaのdefinitionsや外部JSONファイルを使ったときの表示を確認してみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/04/204047)
 - [react-jsonschema-formにて、単一ファイル・複数ファイルのアップロードを試してみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/05/212258)
 - [react-jsonschema-formにて、どのようにフォームを表示するかを uiSchema で定義する - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/06/210723)
+- [react-jsonschema-formにて、Widgetをカスタマイズしてみる - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/07/231806)
