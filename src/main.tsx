@@ -20,6 +20,10 @@ import {UiSchemaForString} from "./components/pages/day6/UiSchemaForString";
 import {UiSchemaForArray} from "./components/pages/day6/UiSchemaForArray";
 import {UiSchemaEmptyValue} from "./components/pages/day6/UiSchemaEmptyValue";
 import {UiSchemaForButton} from "./components/pages/day6/UiSchemaForButton";
+import {OverrideOriginalWidgetForm} from "./components/pages/day7/OverrideOriginalWidgetForm";
+import {ConsoleLogWidgetForm} from "./components/pages/day7/ConsoleLogWidgetForm";
+import {SwitchWidgetForm} from "./components/pages/day7/SwitchWidgetForm";
+import {CustomOptionWidgetForm} from "./components/pages/day7/CustomOptionWidgetForm";
 
 const router = createBrowserRouter([
   {
@@ -133,6 +137,27 @@ const router = createBrowserRouter([
           {
             path: "ui_schema_for_button",
             element: <UiSchemaForButton />
+          }
+        ]
+      },
+      {
+        path: "day7/",
+        children: [
+          {
+            path: "switch_widget",
+            element: <SwitchWidgetForm />
+          },
+          {
+            path: "override_original_textarea_widget",
+            element: <OverrideOriginalWidgetForm />
+          },
+          {
+            path: "console_log_widget",
+            element: <ConsoleLogWidgetForm />
+          },
+          {
+            path: "custom_option_widget",
+            element: <CustomOptionWidgetForm />
           }
         ]
       }
