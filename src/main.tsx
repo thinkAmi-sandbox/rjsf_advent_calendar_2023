@@ -24,6 +24,8 @@ import {OverrideOriginalWidgetForm} from "./components/pages/day7/OverrideOrigin
 import {ConsoleLogWidgetForm} from "./components/pages/day7/ConsoleLogWidgetForm";
 import {SwitchWidgetForm} from "./components/pages/day7/SwitchWidgetForm";
 import {CustomOptionWidgetForm} from "./components/pages/day7/CustomOptionWidgetForm";
+import {GeoFieldForm} from "./components/pages/day8/GeoFieldForm";
+import {EnumListFieldForm} from "./components/pages/day8/EnumListFieldForm";
 
 const router = createBrowserRouter([
   {
@@ -158,6 +160,19 @@ const router = createBrowserRouter([
           {
             path: "custom_option_widget",
             element: <CustomOptionWidgetForm />
+          }
+        ]
+      },
+      {
+        path: "day8",
+        children: [
+          {
+            path: "geo",
+            element: <GeoFieldForm />
+          },
+          {
+            path: "enumList",
+            element: <EnumListFieldForm />
           }
         ]
       }
