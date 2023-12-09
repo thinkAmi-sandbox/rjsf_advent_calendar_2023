@@ -26,6 +26,9 @@ import {SwitchWidgetForm} from "./components/pages/day7/SwitchWidgetForm";
 import {CustomOptionWidgetForm} from "./components/pages/day7/CustomOptionWidgetForm";
 import {GeoFieldForm} from "./components/pages/day8/GeoFieldForm";
 import {EnumListFieldForm} from "./components/pages/day8/EnumListFieldForm";
+import {ConsoleLogInputMuiTemplateForm} from "./components/pages/day9/ConsoleLogInputMuiTemplateForm";
+import {MyObjectFieldTemplateForm} from "./components/pages/day9/MyObjectFieldTemplateForm";
+import {ObjectFieldAndFieldTemplateForm} from "./components/pages/day9/ObjectFieldAndFieldTemplateForm";
 
 const router = createBrowserRouter([
   {
@@ -173,6 +176,23 @@ const router = createBrowserRouter([
           {
             path: "enumList",
             element: <EnumListFieldForm />
+          }
+        ]
+      },
+      {
+        path: "day9",
+        children: [
+          {
+            path: "console_log",
+            element: <ConsoleLogInputMuiTemplateForm />
+          },
+          {
+            path: "object_field",
+            element: <MyObjectFieldTemplateForm />
+          },
+          {
+            path: "object_field_and_field_template",
+            element: <ObjectFieldAndFieldTemplateForm />
           }
         ]
       }
