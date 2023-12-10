@@ -29,6 +29,11 @@ import {EnumListFieldForm} from "./components/pages/day8/EnumListFieldForm";
 import {ConsoleLogInputMuiTemplateForm} from "./components/pages/day9/ConsoleLogInputMuiTemplateForm";
 import {MyObjectFieldTemplateForm} from "./components/pages/day9/MyObjectFieldTemplateForm";
 import {ObjectFieldAndFieldTemplateForm} from "./components/pages/day9/ObjectFieldAndFieldTemplateForm";
+import {LiveValidationForm} from "./components/pages/day10/LiveValidationForm";
+import {DisabledHtml5ValidationForm} from "./components/pages/day10/DisabledHtml5ValidationForm";
+import {EnabledHtml5ValidationForm} from "./components/pages/day10/EnabledHtml5ValidationForm";
+import {CustomValidationRuleForm} from "./components/pages/day10/CustomValidationRuleForm";
+import {CustomValidationMessageForm} from "./components/pages/day10/CustomValidationMessageForm";
 
 const router = createBrowserRouter([
   {
@@ -193,6 +198,31 @@ const router = createBrowserRouter([
           {
             path: "object_field_and_field_template",
             element: <ObjectFieldAndFieldTemplateForm />
+          }
+        ]
+      },
+      {
+        path: "day10",
+        children: [
+          {
+            path: "live_validation",
+            element: <LiveValidationForm />
+          },
+          {
+            path: "enabled_html5_validation",
+            element: <EnabledHtml5ValidationForm />
+          },
+          {
+            path: "disabled_html5_validation",
+            element: <DisabledHtml5ValidationForm />
+          },
+          {
+            path: "custom_validation_rule",
+            element: <CustomValidationRuleForm />
+          },
+          {
+            path: "custom_validation_message",
+            element: <CustomValidationMessageForm />
           }
         ]
       }
