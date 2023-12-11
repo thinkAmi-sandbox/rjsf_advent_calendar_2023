@@ -37,6 +37,7 @@ import {CustomValidationMessageForm} from "./components/pages/day10/CustomValida
 import {NotExistsLocalizerForm} from "./components/pages/day11/NotExistsLocalizerForm";
 import {NewLocalizerForm} from "./components/pages/day11/NewLocalizerForm";
 import {LocalizerWithValidationMessageForm} from "./components/pages/day11/LocalizerWithValidationMessageForm";
+import {AdditionalAjvOptionsForm} from "./components/pages/day12/AdditionalAjvOptionsForm";
 
 const router = createBrowserRouter([
   {
@@ -244,6 +245,15 @@ const router = createBrowserRouter([
             path: "localizer_with_validation_message",
             element: <LocalizerWithValidationMessageForm />
           },
+        ]
+      },
+      {
+        "path": "day12",
+        children: [
+          {
+            path: "additional_ajv_options",
+            element: <AdditionalAjvOptionsForm />
+          }
         ]
       }
     ]
