@@ -34,6 +34,9 @@ import {DisabledHtml5ValidationForm} from "./components/pages/day10/DisabledHtml
 import {EnabledHtml5ValidationForm} from "./components/pages/day10/EnabledHtml5ValidationForm";
 import {CustomValidationRuleForm} from "./components/pages/day10/CustomValidationRuleForm";
 import {CustomValidationMessageForm} from "./components/pages/day10/CustomValidationMessageForm";
+import {NotExistsLocalizerForm} from "./components/pages/day11/NotExistsLocalizerForm";
+import {NewLocalizerForm} from "./components/pages/day11/NewLocalizerForm";
+import {LocalizerWithValidationMessageForm} from "./components/pages/day11/LocalizerWithValidationMessageForm";
 
 const router = createBrowserRouter([
   {
@@ -224,6 +227,23 @@ const router = createBrowserRouter([
             path: "custom_validation_message",
             element: <CustomValidationMessageForm />
           }
+        ]
+      },
+      {
+        path: "day11",
+        children: [
+          {
+            path: "not_exists_localizer",
+            element: <NotExistsLocalizerForm />
+          },
+          {
+            path: "new_localizer",
+            element: <NewLocalizerForm />
+          },
+          {
+            path: "localizer_with_validation_message",
+            element: <LocalizerWithValidationMessageForm />
+          },
         ]
       }
     ]
