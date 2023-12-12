@@ -18,3 +18,4 @@
 - [react-jsonschema-formにて、Templateをカスタマイズしてみる - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/09/225339)
 - [react-jsonschema-formのバリデーションをカスタマイズしてみる - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/10/213209)
 - [react-jsonschema-formにて、バリデーションのエラーメッセージをローカライズしてみる - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/11/220507)
+- [react-jsonschema-formにて、validatorであるajvのオプションを変更する - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/12/200423)
