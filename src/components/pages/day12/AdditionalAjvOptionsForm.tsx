@@ -5,7 +5,7 @@ import {CustomValidatorOptionsType} from "@rjsf/validator-ajv8/src/types"; // np
 
 export const AdditionalAjvOptionsForm = () => {
   const schema: RJSFSchema = {
-    title: "Additional Ajx Option Form",
+    title: "Additional Ajv Option Form",
     type: "object",
     $comment: "my comment",
     properties: {
