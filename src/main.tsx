@@ -38,18 +38,17 @@ import {NotExistsLocalizerForm} from "./components/pages/day11/NotExistsLocalize
 import {NewLocalizerForm} from "./components/pages/day11/NewLocalizerForm";
 import {LocalizerWithValidationMessageForm} from "./components/pages/day11/LocalizerWithValidationMessageForm";
 import {AdditionalAjvOptionsForm} from "./components/pages/day12/AdditionalAjvOptionsForm";
-import {OmitExtraData} from "./components/pages/day13/OmitExtraData";
 import {OmitExtraDataForm} from "./components/pages/day13/OmitExtraDataForm";
 import {NoValidateForm} from "./components/pages/day13/NoValidateForm";
 import {ChildrenForm} from "./components/pages/day13/ChildrenForm";
 import {FocusOnFirstErrorForm} from "./components/pages/day13/FocusOnFirstErrorForm";
 import {FocusOnFirstErrorWithCallbackForm} from "./components/pages/day13/FocusOnFirstErrorWithCallbackForm";
 import {FocusOnFirstErrorAndOnErrorForm} from "./components/pages/day13/FocusOnFirstErrorAndOnErrorForm";
-import {FocusOnAndOnErrorAndAjvOptionForm} from "./components/pages/day13/FocusOnAndOnErrorAndAjvOptionForm";
 import {OnErrorForm} from "./components/pages/day13/OnErrorForm";
 import {ExtraErrorsForm} from "./components/pages/day13/ExtraErrorsForm";
 import {ErrorListBottomForm} from "./components/pages/day13/ErrorListBottomForm";
 import {ErrorListNoneForm} from "./components/pages/day13/ErrorListNoneForm";
+import {CustomMuiThemeForm} from "./components/pages/day14/CustomMuiThemeForm";
 
 const router = createBrowserRouter([
   {
@@ -310,6 +309,15 @@ const router = createBrowserRouter([
           {
             path: "error_list_none",
             element: <ErrorListNoneForm />
+          }
+        ]
+      },
+      {
+        path: "day14",
+        children: [
+          {
+            path: "custom_mui_theme",
+            element: <CustomMuiThemeForm />
           }
         ]
       }
