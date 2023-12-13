@@ -38,6 +38,18 @@ import {NotExistsLocalizerForm} from "./components/pages/day11/NotExistsLocalize
 import {NewLocalizerForm} from "./components/pages/day11/NewLocalizerForm";
 import {LocalizerWithValidationMessageForm} from "./components/pages/day11/LocalizerWithValidationMessageForm";
 import {AdditionalAjvOptionsForm} from "./components/pages/day12/AdditionalAjvOptionsForm";
+import {OmitExtraData} from "./components/pages/day13/OmitExtraData";
+import {OmitExtraDataForm} from "./components/pages/day13/OmitExtraDataForm";
+import {NoValidateForm} from "./components/pages/day13/NoValidateForm";
+import {ChildrenForm} from "./components/pages/day13/ChildrenForm";
+import {FocusOnFirstErrorForm} from "./components/pages/day13/FocusOnFirstErrorForm";
+import {FocusOnFirstErrorWithCallbackForm} from "./components/pages/day13/FocusOnFirstErrorWithCallbackForm";
+import {FocusOnFirstErrorAndOnErrorForm} from "./components/pages/day13/FocusOnFirstErrorAndOnErrorForm";
+import {FocusOnAndOnErrorAndAjvOptionForm} from "./components/pages/day13/FocusOnAndOnErrorAndAjvOptionForm";
+import {OnErrorForm} from "./components/pages/day13/OnErrorForm";
+import {ExtraErrorsForm} from "./components/pages/day13/ExtraErrorsForm";
+import {ErrorListBottomForm} from "./components/pages/day13/ErrorListBottomForm";
+import {ErrorListNoneForm} from "./components/pages/day13/ErrorListNoneForm";
 
 const router = createBrowserRouter([
   {
@@ -253,6 +265,51 @@ const router = createBrowserRouter([
           {
             path: "additional_ajv_options",
             element: <AdditionalAjvOptionsForm />
+          }
+        ]
+      },
+      {
+        path: "day13",
+        children: [
+          {
+            path: "omit_extra_data",
+            element: <OmitExtraDataForm />
+          },
+          {
+            path: "no_validate",
+            element: <NoValidateForm />
+          },
+          {
+            path: "children",
+            element: <ChildrenForm />
+          },
+          {
+            path: "focus_on_first_error",
+            element: <FocusOnFirstErrorForm />
+          },
+          {
+            path: "focus_on_first_error_with_callback",
+            element: <FocusOnFirstErrorWithCallbackForm />
+          },
+          {
+            path: "focus_on_first_error_and_on_error",
+            element: <FocusOnFirstErrorAndOnErrorForm />
+          },
+          {
+            path: "on_error",
+            element: <OnErrorForm />
+          },
+          {
+            path: "extra_error",
+            element: <ExtraErrorsForm />
+          },
+          {
+            path: "error_list_bottom",
+            element: <ErrorListBottomForm />
+          },
+          {
+            path: "error_list_none",
+            element: <ErrorListNoneForm />
           }
         ]
       }
