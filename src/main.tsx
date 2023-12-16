@@ -49,6 +49,14 @@ import {ExtraErrorsForm} from "./components/pages/day13/ExtraErrorsForm";
 import {ErrorListBottomForm} from "./components/pages/day13/ErrorListBottomForm";
 import {ErrorListNoneForm} from "./components/pages/day13/ErrorListNoneForm";
 import {CustomMuiThemeForm} from "./components/pages/day14/CustomMuiThemeForm";
+import {NoInputWithoutDefaultForm} from "./components/pages/day16/NoInputWithoutDefaultForm";
+import {NoInputWIthDefaultUndefinedForm} from "./components/pages/day16/NoInputWIthDefaultUndefinedForm";
+import {NoInputWIthDefaultNullForm} from "./components/pages/day16/NoInputWithDefaultNullForm";
+import {NoInputWithDefaultFalsyForm} from "./components/pages/day16/NoInputWithDefaultFalsyForm";
+import {NoInputForm} from "./components/pages/day16/NoInputForm";
+import {NoInputWithFormData} from "./components/pages/day16/NoInputWithFormData";
+import {EmptyValueWithOriginalThemeForm} from "./components/pages/day16/EmptyValueWithOriginalThemeForm";
+import {EmptyValueWithMuiThemeForm} from "./components/pages/day16/EmptyValueWithMuiThemeForm";
 
 const router = createBrowserRouter([
   {
@@ -318,6 +326,43 @@ const router = createBrowserRouter([
           {
             path: "custom_mui_theme",
             element: <CustomMuiThemeForm />
+          }
+        ]
+      },
+      {
+        path: "day16",
+        children: [
+          {
+            path: "no_input",
+            element: <NoInputForm />
+          },
+          {
+            path: "no_input_without_default",
+            element: <NoInputWithoutDefaultForm />
+          },
+          {
+            path: "no_input_with_default_undefined",
+            element: <NoInputWIthDefaultUndefinedForm />
+          },
+          {
+            path: "no_input_with_default_null",
+            element: <NoInputWIthDefaultNullForm />
+          },
+          {
+            path: "no_input_with_default_falsy",
+            element: <NoInputWithDefaultFalsyForm />
+          },
+          {
+            path: "no_input_with_form_data",
+            element: <NoInputWithFormData />
+          },
+          {
+            path: "empty_value_with_original_theme",
+            element: <EmptyValueWithOriginalThemeForm />
+          },
+          {
+            path: "empty_value_with_mui_theme",
+            element: <EmptyValueWithMuiThemeForm />
           }
         ]
       }
