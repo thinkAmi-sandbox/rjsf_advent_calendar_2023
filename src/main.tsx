@@ -58,6 +58,13 @@ import {NoInputWithFormData} from "./components/pages/day16/NoInputWithFormData"
 import {EmptyValueWithOriginalThemeForm} from "./components/pages/day16/EmptyValueWithOriginalThemeForm";
 import {EmptyValueWithMuiThemeForm} from "./components/pages/day16/EmptyValueWithMuiThemeForm";
 import {ExamplesKeywordForm} from "./components/pages/day17/ExamplesKeywordForm";
+import {MyArrayFieldDescriptionTemplateForm} from "./components/pages/day18/MyArrayFieldDescriptionTemplateForm";
+import {MyArrayFieldTitleTemplateForm} from "./components/pages/day18/MyArrayFieldTitleTemplateForm";
+import {DefaultArrayFieldsForm} from "./components/pages/day18/DefaultArrayFieldsForm";
+import {MyArrayFieldItemForm} from "./components/pages/day18/MyArrayFieldItemForm";
+import {MyArrayFieldTemplateForm} from "./components/pages/day18/MyArrayFieldTemplateForm";
+import {MixAllTemplateForm} from "./components/pages/day18/MixAllTemplateForm";
+import {MixWithoutArrayFieldTemplateForm} from "./components/pages/day18/MixWithoutArrayFieldTemplateForm";
 
 const router = createBrowserRouter([
   {
@@ -373,6 +380,39 @@ const router = createBrowserRouter([
           {
             path: "examples_keyword",
             element: <ExamplesKeywordForm />
+          }
+        ]
+      },
+      {
+        path: "day18",
+        children: [
+          {
+            path: "default_array",
+            element: <DefaultArrayFieldsForm />
+          },
+          {
+            path: "field_description",
+            element: <MyArrayFieldDescriptionTemplateForm />
+          },
+          {
+            path: "field_title",
+            element: <MyArrayFieldTitleTemplateForm />
+          },
+          {
+            path: "field_item",
+            element: <MyArrayFieldItemForm />
+          },
+          {
+            path: "array_field",
+            element: <MyArrayFieldTemplateForm />
+          },
+          {
+            path: "mix_all",
+            element: <MixAllTemplateForm />
+          },
+          {
+            path: "mix_without_array_field",
+            element: <MixWithoutArrayFieldTemplateForm />
           }
         ]
       }
