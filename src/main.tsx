@@ -57,6 +57,7 @@ import {NoInputForm} from "./components/pages/day16/NoInputForm";
 import {NoInputWithFormData} from "./components/pages/day16/NoInputWithFormData";
 import {EmptyValueWithOriginalThemeForm} from "./components/pages/day16/EmptyValueWithOriginalThemeForm";
 import {EmptyValueWithMuiThemeForm} from "./components/pages/day16/EmptyValueWithMuiThemeForm";
+import {ExamplesKeywordForm} from "./components/pages/day17/ExamplesKeywordForm";
 
 const router = createBrowserRouter([
   {
@@ -363,6 +364,15 @@ const router = createBrowserRouter([
           {
             path: "empty_value_with_mui_theme",
             element: <EmptyValueWithMuiThemeForm />
+          }
+        ]
+      },
+      {
+        path: "day17",
+        children: [
+          {
+            path: "examples_keyword",
+            element: <ExamplesKeywordForm />
           }
         ]
       }
