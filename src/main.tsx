@@ -65,6 +65,7 @@ import {MyArrayFieldItemForm} from "./components/pages/day18/MyArrayFieldItemFor
 import {MyArrayFieldTemplateForm} from "./components/pages/day18/MyArrayFieldTemplateForm";
 import {MixAllTemplateForm} from "./components/pages/day18/MixAllTemplateForm";
 import {MixWithoutArrayFieldTemplateForm} from "./components/pages/day18/MixWithoutArrayFieldTemplateForm";
+import {TransformationFunctionForm} from "./components/pages/day19/TransformationFunctionForm";
 
 const router = createBrowserRouter([
   {
@@ -413,6 +414,15 @@ const router = createBrowserRouter([
           {
             path: "mix_without_array_field",
             element: <MixWithoutArrayFieldTemplateForm />
+          }
+        ]
+      },
+      {
+        path: "day19",
+        children: [
+          {
+            path: "transformation_function",
+            element: <TransformationFunctionForm />
           }
         ]
       }
