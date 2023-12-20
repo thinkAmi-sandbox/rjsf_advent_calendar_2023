@@ -1,5 +1,8 @@
 # rjsf_advent_calendar_2023
 
+Sample code for react-jsonschema-form advent calendar.  
+https://qiita.com/advent-calendar/2023/react-jsonschema-form
+
 ## Tested Environment
 
 - react-jsonschema-form 5.15.0
@@ -25,3 +28,4 @@
 - [react-jsonschema-formにて、JSON Schemaのexamplesキーワードを使ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/17/171918)
 - [react-jsonschema-formにて、ArrayのTemplateをカスタマイズしてみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/18/202034)
 - [react-jsonschema-formに含まれる、データを変換する系のユーティリティ関数を使ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/19/223025)
+- [react-jsonschema-formにて、formContextを使ってWidgetやFieldに値を渡してみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/20/221625)
