@@ -66,6 +66,7 @@ import {MyArrayFieldTemplateForm} from "./components/pages/day18/MyArrayFieldTem
 import {MixAllTemplateForm} from "./components/pages/day18/MixAllTemplateForm";
 import {MixWithoutArrayFieldTemplateForm} from "./components/pages/day18/MixWithoutArrayFieldTemplateForm";
 import {TransformationFunctionForm} from "./components/pages/day19/TransformationFunctionForm";
+import {UsingFormContextForm} from "./components/pages/day20/UsingFormContextForm";
 
 const router = createBrowserRouter([
   {
@@ -423,6 +424,15 @@ const router = createBrowserRouter([
           {
             path: "transformation_function",
             element: <TransformationFunctionForm />
+          }
+        ]
+      },
+      {
+        path: "day20",
+        children: [
+          {
+            path: "form_context",
+            element: <UsingFormContextForm />
           }
         ]
       }
