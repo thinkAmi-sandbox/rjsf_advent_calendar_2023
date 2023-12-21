@@ -67,6 +67,11 @@ import {MixAllTemplateForm} from "./components/pages/day18/MixAllTemplateForm";
 import {MixWithoutArrayFieldTemplateForm} from "./components/pages/day18/MixWithoutArrayFieldTemplateForm";
 import {TransformationFunctionForm} from "./components/pages/day19/TransformationFunctionForm";
 import {UsingFormContextForm} from "./components/pages/day20/UsingFormContextForm";
+import {AdditionalStringForm} from "./components/pages/day21/AdditionalStringForm";
+import {AdditionalObjectForm} from "./components/pages/day21/AdditionalObjectForm";
+import {AdditionalObjectOnlyStringForm} from "./components/pages/day21/AdditionalObjectOnlyStringForm";
+import {AdditionalUnsupportedTypeForm} from "./components/pages/day21/AdditionalUnsupportedTypeForm";
+import {AdditionalHiddenForm} from "./components/pages/day21/AdditionalHiddenForm";
 
 const router = createBrowserRouter([
   {
@@ -433,6 +438,31 @@ const router = createBrowserRouter([
           {
             path: "form_context",
             element: <UsingFormContextForm />
+          }
+        ]
+      },
+      {
+        path: "day21",
+        children: [
+          {
+            path: "additional_string",
+            element: <AdditionalStringForm />
+          },
+          {
+            path: "additional_object",
+            element: <AdditionalObjectForm />
+          },
+          {
+            path: "additional_object_only_string",
+            element: <AdditionalObjectOnlyStringForm />
+          },
+          {
+            path: "additional_unsupported",
+            element: <AdditionalUnsupportedTypeForm />
+          },
+          {
+            path: "additional_hidden",
+            element: <AdditionalHiddenForm />
           }
         ]
       }
