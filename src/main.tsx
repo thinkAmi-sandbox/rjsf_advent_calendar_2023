@@ -72,6 +72,10 @@ import {AdditionalObjectForm} from "./components/pages/day21/AdditionalObjectFor
 import {AdditionalObjectOnlyStringForm} from "./components/pages/day21/AdditionalObjectOnlyStringForm";
 import {AdditionalUnsupportedTypeForm} from "./components/pages/day21/AdditionalUnsupportedTypeForm";
 import {AdditionalHiddenForm} from "./components/pages/day21/AdditionalHiddenForm";
+import {NotClearErrorForm} from "./components/pages/day22/NotClearErrorForm";
+import {NotClearErrorFormFixed} from "./components/pages/day22/NotClearErrorFormFixed";
+import {DateFormatForm} from "./components/pages/day22/DateFormatForm";
+import {ValidationForm} from "./components/pages/day22/ValidationForm";
 
 const router = createBrowserRouter([
   {
@@ -463,6 +467,27 @@ const router = createBrowserRouter([
           {
             path: "additional_hidden",
             element: <AdditionalHiddenForm />
+          }
+        ]
+      },
+      {
+        path: "day22",
+        children: [
+          {
+            path: "validation",
+            element: <ValidationForm />
+          },
+          {
+            path: "not_clear_error",
+            element: <NotClearErrorForm />
+          },
+          {
+            path: "fixed_not_clear_error",
+            element: <NotClearErrorFormFixed />
+          },
+          {
+            path: "date_format",
+            element: <DateFormatForm />
           }
         ]
       }
