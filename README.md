@@ -30,3 +30,4 @@ https://qiita.com/advent-calendar/2023/react-jsonschema-form
 - [react-jsonschema-formに含まれる、データを変換する系のユーティリティ関数を使ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/19/223025)
 - [react-jsonschema-formにて、formContextを使ってWidgetやFieldに値を渡してみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/20/221625)
 - [react-jsonschema-formで、additionalPropertiesを使った時の表示を確認してみる - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/21/225512)
+- [react-jsonschema-formにおける、バリデーションエラー時の気になる挙動と対応について - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2023/12/22/233415)
