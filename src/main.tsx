@@ -76,6 +76,9 @@ import {NotClearErrorForm} from "./components/pages/day22/NotClearErrorForm";
 import {NotClearErrorFormFixed} from "./components/pages/day22/NotClearErrorFormFixed";
 import {DateFormatForm} from "./components/pages/day22/DateFormatForm";
 import {ValidationForm} from "./components/pages/day22/ValidationForm";
+import {EmptyObjectFieldsForm} from "./components/pages/day24/EmptyObjectFieldsForm";
+import {AllOfForm} from "./components/pages/day24/AllOfForm";
+import {ArrayMinItemsForm} from "./components/pages/day24/ArrayMinItemsForm";
 
 const router = createBrowserRouter([
   {
@@ -488,6 +491,23 @@ const router = createBrowserRouter([
           {
             path: "date_format",
             element: <DateFormatForm />
+          }
+        ]
+      },
+      {
+        path: "day24",
+        children: [
+          {
+            path: "array_min_items",
+            element: <ArrayMinItemsForm />
+          },
+          {
+            path: "empty_object_fields",
+            element: <EmptyObjectFieldsForm />
+          },
+          {
+            path: "all_of",
+            element: <AllOfForm />
           }
         ]
       }
